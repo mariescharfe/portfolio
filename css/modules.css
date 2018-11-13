@@ -847,10 +847,10 @@ select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='none' stroke='%23000' stroke-miterlimit='10' stroke-width='50' d='M49.9 130.1l50.8 50.7L206.1 75.2'/%3E%3C/svg%3E");
 }
 
-[type="checkbox"]:focus + label::before {
+/* [type="checkbox"]:focus + label::before {
   outline: 3px solid #000;
   z-index: 1000;
-}
+} */
 
 [type="radio"] + label::before {
   content: " ";
@@ -874,10 +874,10 @@ select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Ccircle cx='128' cy='128' r='70.4'/%3E%3C/svg%3E");
 }
 
-[type="radio"]:focus + label::before,
+/* [type="radio"]:focus + label::before,
 [type="radio"] + label:focus::before {
   box-shadow: 0 0 0 3px #000;
-  z-index: 1000;
+  z-index: 1000; */
 }
 
 [type="range"] {
@@ -1030,14 +1030,14 @@ button::-moz-focus-inner {
 
 /* stylelint-enable */
 
-button:focus,
+/* button:focus,
 button:hover,
 .btn:focus,
 .btn:hover {
   background-color: #000;
   border-color: #000;
   color: #fff;
-}
+} */
 
 button[disabled] {
   cursor: default;
@@ -1049,30 +1049,30 @@ button[disabled] {
   color: #000;
 }
 
-.btn-light:focus,
+/* .btn-light:focus,
 .btn-light:hover,
 .btn--light:focus,
 .btn--light:hover {
   background-color: #666;
   border-color: #666;
   color: #fff;
-}
+} */
 
-.btn-ghost,
+/* .btn-ghost,
 .btn--ghost {
   background-color: transparent;
   border-color: #333;
   color: #000;
-}
+} */
 
-.btn-ghost:focus,
+/* .btn-ghost:focus,
 .btn-ghost:hover,
 .btn--ghost:focus,
 .btn--ghost:hover {
   background-color: #e2e2e2;
   border-color: #000;
   color: #000;
-}
+} */
 
 .btn-link {
   display: inline;
@@ -1093,7 +1093,7 @@ a:hover, a:active {
   outline: none;
 }
 
-a:focus,
+/* a:focus,
 [tabindex="0"]:focus,
 details:focus,
 summary:focus,
@@ -1103,7 +1103,7 @@ button:focus,
 select:focus {
   outline: 3px solid #000;
   outline-offset: 0;
-}
+} */
 
 a:focus, [tabindex="0"]:focus {
   outline-offset: 3px;

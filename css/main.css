@@ -1,10 +1,6 @@
-html {
+header {
   height: 100%;
   background: linear-gradient(90deg, #fff 66.6666%, #fcc02a 33.3333%);
-}
-
-body {
-  margin-top: 10%;
 }
 
 h1, h2, h3, h4, h5, h6, {
@@ -21,13 +17,15 @@ p {
   max-width: 260px;
 }
 
-p a {
+a {
   text-decoration: none;
+}
+
+p a {
   color: #000;
 }
 
 li a {
-  text-decoration: none;
   color: #fcc02a;
 }
 
@@ -47,6 +45,43 @@ img {
   color: #122244;
 }
 
+.full-height {
+  height: 100vh;
+}
+
+.move {
+  animation: move .5s ease-out infinite alternate;
+  color: #122244;
+}
+
+ul li a {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #fcc02a;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @media only screen and (min-width: 38em) {
 
   img {
@@ -59,6 +94,7 @@ img {
     max-width: 310px;
   }
 
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -67,13 +103,5 @@ img {
     max-width: 350px;
   }
 
-
-}
-
-@media only screen and (min-width:90em) {
-
-  body {
-    margin-top: 5%;
-  }
 
 }
