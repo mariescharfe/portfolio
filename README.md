@@ -1,29 +1,10 @@
----
-summary: "Make a single page, coming soon website as a placeholder for your portfolio—but it should not say “coming soon” or “under construction” anywhere. Think of it as a business card website."
-time: "4 hours"
-deliverables: "1 HTML file, 1 CSS file, images"
----
+# Marie Scharfe
 
-# Coming soon page
+#### [mariescharfe.ca](https://mariescharfe.ca)
 
-## Overview
+![](images/me.jpg)
 
-- Should contain the following information: your name, a brief bio, email address, social media links, photo or icon.
-- Make sure the website is flexible 320px – ~2500px.
-- **We’ll be putting it live—on your domain—next week.**
+Bonjour! I'm Marie, a Graphic Design student currently in my last year of studies at Algonquin College. I focus on branding and logo design. I enjoy creating and embellishing things, wether they're brand new or simply in need of a pick me up! I guess designing fulfills this inexplainable need I have to fuss and focus on a specific task until it resembles something close to perfection. Go ahead, send me a message and we can discuss what I can obsess over next!
 
----
-
-## Goal
-
-The included wireframe is an example of what you might do on large screen websites. *It’s up to you to design it for all screen sizes.*
-
-![](wireframe.png)
-
-**Obviously you should make it your own thing with your own style and brand.**
-
----
-
-## Hand in
-
-Show the teacher that it’s a live website—on your domain—at the end of next class.
+**[hello@mariescharfe.ca](mailto:hello@mariescharfe.ca)**
+[Instagram](https://www.instagram.com/mariescharfe)
