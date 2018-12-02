@@ -6,7 +6,7 @@ header {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
-  color: #666;
+  color: #122244;
 }
 
 p {
@@ -22,7 +22,7 @@ a {
 }
 
 p a {
-  color: #666;
+  color: #000;
 }
 
 li a {
@@ -38,7 +38,10 @@ li a p:hover {
   max-height: auto;
   max-width: 350px;
   overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blue-text {
+  color: #122244;
 }
 
 .full-height {
@@ -47,17 +50,9 @@ li a p:hover {
 
 .move {
   animation: move .5s ease-out infinite alternate;
-  color: #666;
+  color: #122244;
 }
 
-@keyframes move {
-  from {
-    transform: translateY(10px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 
 ul li a {
   color: #fff;
@@ -77,17 +72,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 1;
-  width: 100vw;
-}
-
-.sticky li {
-  display: inline-block;
-  margin-bottom: 0;
-  font-size: 75%;
-}
-
-.pad-main {
-  padding-top: 4em;
+  width: 200px;
 }
 
 .polaroid {
@@ -99,45 +84,26 @@ nav {
   padding: 10px;
 }
 
-footer {
-  background-color: #666;
-  color: #fff;
-  font-family: Raleway, sans-serif;
+.shift-left {
+  padding-left: 5%;
 }
 
-footer a {
-  color: #fff;
+.shift-right {
+  padding-right: 2%;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
-
-.wrapper-2 {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 55em;
-  width: 100%;
-}
-
-hr {
-  border: 1px solid #fcc02a;
-}
-
-.services {
-  color: #666;
-  font-family: Raleway, sans-serif;
+@keyframes move {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @media only screen and (min-width: 0em) {
 
-  footer .copyright {
-    text-align: center;
-  }
 
-  footer .bot-nav {
-    text-align: center;
-  }
 
 }
 
@@ -145,7 +111,7 @@ hr {
 
   .profile-img {
     max-width: 250px;
-    margin-left: 20px;
+    padding-left: 20px;
   }
 
   .content {
@@ -155,43 +121,78 @@ hr {
 
   .sticky {
     left: 1vw;
-    width: 200px;
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
-
-  .sticky li {
-    display: block;
-    font-size: 100%;
-  }
-
-  .pad-main {
-    padding-top: 3em;
   }
 
   .polaroid:hover .polaroid-img {
     transform: scale(1.1);
-    transition: .5s;
+    transition: .2s;
   }
 
-  .polaroid-img {
-    transition: 1s;
-  }
+}
 
-  footer .copyright {
-    text-align: left;
-  }
+/* .container {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+} */
 
-  footer .bot-nav {
-    text-align: right;
-  }
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 7px;
+}
 
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.topnav {
+  display: none;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 4em;
+  z-index: 10;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #76accc;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+}
+
+.topnav a:hover {
+  background-color: #fff;
+  color: black;
 }
 
 @media only screen and (min-width: 60em) {
 
   .profile-img {
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .sticky {
@@ -203,7 +204,7 @@ hr {
 @media only screen and (min-width: 90em) {
 
   .sticky {
-    left: 7vw;
+    left: 10vw;
   }
 
 }

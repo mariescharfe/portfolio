@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Marie Scharfe Design</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main2.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,400i,700" rel="stylesheet">
+</head>
+<body>
+
+  <header class="relative full-height" id="about">
+    <div class="pin-c wrapper">
+      <div class="grid grid-middle island">
+        <div class="unit xs-1 m-1-2">
+          <div class="content">
+            <h1 class="tenamega push-0 blue-text">Bonjour!</h1>
+            <p class="nano">I'm Marie, I focus on branding and logo design. I enjoy creating and embellishing things, wether they're brand new or simply in need of a pick me up! I guess designing fulfills this inexplainable need I have to fuss and focus on a specific task until it resembles something close to perfection. Go ahead, send me a message and we can discuss what I can obsess over next!</p>
+            <p class="nano push-0">email : <a href="mailto:hello@mariescharfe.ca">hello@mariescharfe.ca</a></p>
+          </div>
+          <div>
+            <ol class="list-group-inline push-0 nano content">
+              <li>
+                <a href="https://www.facebook.com/">
+                  <p class="push-r-1-2">facebook</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/">
+                  <p class="push-r-1-2">instagram</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/">
+                  <p>twitter</p>
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="unit [ xs-1-3 m-1-2 ]">
+          <div>
+            <img class="img-flex profile-img" src="images/me.jpg" alt="me">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pin-cb">
+      <a href="#main"><p class="move">V</p></a>
+    </div>
+  </header>
+
+  <div>
+    <a href="javascript:void(0);" class="icon right" onclick="showmenu()">
+      <i class="fa fa-bars">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </i>
+    </a>
+    <div id="myLinks" class="topnav pin-top-center wrapper">
+      <a href="{{baseurl}}/index.html">Home</a>
+      <a href="{{baseurl}}/case1.html">Works</a>
+      <a href="{{baseurl}}/about.html">About</a>
+    </div>
+  </div>
+
+  <nav class="sticky pad-t-2 pad-b" id="nav">
+    <ul class="list-group text-upper text-center">
+      <li class="push">
+        <a href="#about">About</a>
+      </li>
+      <li class="push">
+        <a href="#main">Portfolio</a>
+      </li>
+      <li class="push">
+        <a href="#">Services</a>
+      </li>
+      <li class="push">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="wrapper pad-t-2" id="main">
+    <div class="grid shift-right">
+      <div class="unit [ xs-1 m-2-5 ] unit-offset-l-1-5 pad-b-2 shift-left">
+        <div class="polaroid">
+          <div class="embed embed-1by1">
+            <img class="embed-item polaroid-img" src="images/placeholder-1by1.svg" alt="">
+          </div>
+          <div class="container">
+            <p class="push-0 island-1-2">Project Title</p>
+          </div>
+        </div>
+      </div>
+      <div class="unit [ xs-1 m-2-5 ] pad-b shift-left">
+        <div class="polaroid">
+          <div class="embed embed-1by1">
+            <img class="embed-item polaroid-img" src="images/placeholder-1by1.svg" alt="">
+          </div>
+          <div class="container">
+            <p class="push-0 island-1-2">Project Title</p>
+          </div>
+        </div>
+      </div>
+      <div class="unit [ xs-1 m-2-5 ] unit-offset-l-1-5 pad-b-2 shift-left">
+        <div class="polaroid">
+          <div class="embed embed-1by1">
+            <img class="embed-item polaroid-img" src="images/placeholder-1by1.svg" alt="">
+          </div>
+          <div class="container">
+            <p class="push-0 island-1-2">Project Title</p>
+          </div>
+        </div>
+      </div>
+      <div class="unit [ xs-1 m-2-5 ] pad-b shift-left">
+        <div class="polaroid">
+          <div class="embed embed-1by1">
+            <img class="embed-item polaroid-img" src="images/placeholder-1by1.svg" alt="">
+          </div>
+          <div class="container">
+            <p class="push-0 island-1-2">Project Title</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("a").on('click', function() {
+      if (this.hash !== "") {
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+
+    function showmenu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+      x.style.display = "none";
+      } else {
+      x.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
