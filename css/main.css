@@ -85,6 +85,7 @@ ul li a:hover {
 ol li a {
   color: #fff;
   font-family: Raleway, sans-serif;
+  border: 2px solid #fcc02a;
 }
 
 ol li {

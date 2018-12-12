@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
-  <link href="css/modules.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/modules.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,400i,700" rel="stylesheet">
 </head>
 <body>
@@ -18,15 +18,16 @@
     <div class="yellow-bg sticky-2">
       <nav class="grid grid-middle margin-r">
         <div class="unit [ xs-1-3 ] island">
-          <p class="push-none"><a href="index.html">Marie Scharfe</a></p>
+          <p class="push-none"><a href="{{site.baseurl}}/index.html">Marie Scharfe</a></p>
         </div>
         <div class="unit [ xs-2-3 ] text-right island-1-4">
           <ol class="list-group-inline push-none">
-            <li class="island-1-2"><a class="gutter-1-4 current" href="#">1</a></li>
-            <li class="island-1-2"><a class="gutter-1-4" href="#">2</a></li>
-            <li class="island-1-2"><a class="gutter-1-4" href="#">3</a></li>
-            <li class="island-1-2"><a class="gutter-1-4" href="#">4</a></li>
-            <li class="island-1-2"><a class="gutter-1-4" href="#">5</a></li>
+            <li class="island-1-2"><a class="gutter-1-4 {{page.current-state-1}}" href="../{{site.baseurl}}/simple-split">1</a></li>
+            <li class="island-1-2"><a class="gutter-1-4 {{page.current-state-2}}" href="../{{site.baseurl}}/basic-white-witch">2</a></li>
+            <li class="island-1-2"><a class="gutter-1-4 {{page.current-state-3}}" href="../{{site.baseurl}}/lac-sainte-marie">3</a></li>
+            <li class="island-1-2"><a class="gutter-1-4 {{page.current-state-4}}" href="../{{site.baseurl}}/wondering-about-a-vegan-diet">4</a></li>
+            <li class="island-1-2"><a class="gutter-1-4 {{page.current-state-5}}" href="../{{site.baseurl}}/">5</a></li>
+            <li class="island-1-2"><a class="gutter-1-4 {{page.current-state-6}}" href="../{{site.baseurl}}/">6</a></li>
           </ol>
         </div>
       </nav>
@@ -35,11 +36,11 @@
       <div class="grid grid-middle wrapper unit-height header-grid">
         <div class="unit [ xs-1 m-1-2 ] island-2 unit-max-w">
           <div class="title-border">
-            <h1 class="box-title island-1-2 push-none">Simple Split</h1>
+            <h1 class="box-title island-1-2 push-none">{{page.title}}</h1>
           </div>
         </div>
         <div class="unit [ xs-1 m-1-2 ] relative unit-height">
-          <p class="milli text-push gutter-2">In a group of 3, in which I was the project lead, I guided the team as we came over challenges and found solutions while developping brand identity and logo for Simple Split. Simple Split is an app that helps parents, cohabitors, and partners living together manage their finances, track and share expenses, store receipts and print annual report for taxes.</p>
+          <p class="milli text-push gutter-2">{{page.description}}</p>
         </div>
       </div>
     </div>
@@ -54,22 +55,22 @@
       <div class="grid wrapper text-center">
         <div class="unit [ xs-1 m-1-2 ] island-2">
           <div class="embed embed-1by1 embed-enlarge">
-            <img class="embed-item" src="images/placeholder-1by1.jpg" alt="">
+            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-1}}" alt="">
           </div>
         </div>
         <div class="unit [ xs-1 m-1-2 ] island-2">
           <div class="embed embed-1by1 embed-enlarge">
-            <img class="embed-item" src="images/placeholder-1by1.jpg" alt="">
+            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-2}}" alt="">
           </div>
         </div>
         <div class="unit [ xs-1 m-1-2 ] island-2">
           <div class="embed embed-1by1 embed-enlarge">
-            <img class="embed-item" src="images/placeholder-1by1.jpg" alt="">
+            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-3}}" alt="">
           </div>
         </div>
         <div class="unit [ xs-1 m-1-2 ] island-2">
           <div class="embed embed-1by1 embed-enlarge">
-            <img class="embed-item" src="images/placeholder-1by1.jpg" alt="">
+            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-4}}" alt="">
           </div>
         </div>
       </div>
@@ -77,16 +78,16 @@
     <section class="push">
       <h2 class="h2-underline pad-t-2 nina">Observations</h2>
       <div class="double-column wrapper milli island-2">
-        <p class="push-1-4">The design process involved determining an appropriate identity for Simple Split, which brought our client's vision to life. We started by determining the target audience, and from there started the sketching process.</p>
-        <p class="push-1-4">We created a logo, brand guidelines and a SASS website prototype for the app. The fonts and colours chosen helped create a soft and simple identity.</p>
-        <p class="push-0">With proper and extensive research, we were able to create a unified brand for Simple Split. Throughout this process I developped leadership and communication skills.</p>
+        <p class="push-1-4">{{page.content-1}}</p>
+        <p class="push-1-4">{{page.content-2}}</p>
+        <p class="push-0">{{page.content-3}}</p>
       </div>
     </section>
     <section class="push-2">
       <h2 class="h2-underline pad-t-2 nina push">Outcome</h2>
       <div class="wrapper">
         <div class="embed embed-3by2">
-          <img class="embed-item island-2" src="images/placeholder-3by2.png" alt="">
+          <img class="embed-item island-2" src="{{site.baseurl}}/images/{{page.outcome-img-1}}" alt="">
         </div>
       </div>
     </section>
@@ -97,16 +98,16 @@
       <div class="unit [ xs-1 m-1-2 l-1-3 ] unit-push-m-1-2 unit-push-l-2-3 island-1-4 micro bot-nav">
         <div class="grid">
           <div class="unit [ xs-1-4 ]">
-            <a href="#about">About</a>
+            <a href="#about">{{page.nav-1}}</a>
           </div>
           <div class="unit [ xs-1-4 ]">
-            <a href="#main">Portfolio</a>
+            <a href="#main">{{page.nav-2}}</a>
           </div>
           <div class="unit [ xs-1-4 ]">
-            <a href="#services">Services</a>
+            <a href="#services">{{page.nav-3}}</a>
           </div>
           <div class="unit [ xs-1-4 ]">
-            <a href="#contact">Contact</a>
+            <a href="#contact">{{page.nav-4}}</a>
           </div>
         </div>
       </div>
@@ -115,6 +116,22 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("a").on('click', function() {
+        if (this.hash !== "") {
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
 
 </body>
 </html>
