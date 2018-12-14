@@ -15,9 +15,10 @@
 </head>
 <body>
 
-  <header class="header-2">
+  <header role="banner" class="header-2 relative">
+    <div class="pin-t-c horizon-move"></div>
     <div class="yellow-bg sticky-2">
-      <nav class="grid grid-middle margin-r">
+      <nav role="navigation" id="nav" tabindex="0" class="grid grid-middle margin-r">
         <div class="unit [ xs-1-3 ] island-1-2">
           <p class="push-none"><a href="{{site.baseurl}}/index{{page.link-fr}}">Marie Scharfe</a></p>
         </div>
@@ -36,8 +37,8 @@
     <div class="header-2-content">
       <div class="grid grid-middle wrapper unit-height header-grid">
         <div class="unit [ xs-1 m-1-2 ] island-2 unit-max-w">
-          <div class="title-border">
-            <h1 class="box-title island-1-2 push-none">{{page.title}}</h1>
+          <div class="embed embed-2by3">
+            <img class="embed-item" src="/images/{{page.title-img}}" alt="{{page.title-1-alt}}">
           </div>
         </div>
         <div class="unit [ xs-1 m-1-2 ] relative unit-height">
@@ -45,33 +46,33 @@
         </div>
       </div>
     </div>
-    <div class="pin-cb">
+    <div class="pin-cb pad-b-1-2">
       <a href="#main"><p class="move">V</p></a>
     </div>
   </header>
 
-  <main class="pad-t-2" id="main">
+  <main role="main" tabindex="0" class="pad-t-2" id="main">
     <section class="push">
       <h2 class="h2-underline pad-t-2 nina">Process</h2>
       <div class="grid wrapper text-center">
         <div class="unit [ xs-1 m-1-2 ] island">
           <div class="embed embed-1by1 embed-enlarge img-border">
-            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-1}}" alt="">
+            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-1}}" alt="{{page.process-1-alt}}">
           </div>
         </div>
         <div class="unit [ xs-1 m-1-2 ] island">
           <div class="embed embed-1by1 embed-enlarge img-border">
-            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-2}}" alt="">
+            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-2}}" alt="{{page.process-2-alt}}">
           </div>
         </div>
         <div class="unit [ xs-1 m-1-2 ] island">
           <div class="embed embed-1by1 embed-enlarge img-border">
-            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-3}}" alt="">
+            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-3}}" alt="{{page.process-3-alt}}">
           </div>
         </div>
         <div class="unit [ xs-1 m-1-2 ] island">
           <div class="embed embed-1by1 embed-enlarge img-border">
-            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-4}}" alt="">
+            <img class="embed-item" src="{{site.baseurl}}/images/{{page.process-img-4}}" alt="{{page.process-4-alt}}">
           </div>
         </div>
       </div>
@@ -88,13 +89,13 @@
       <h2 class="h2-underline pad-t nina push">Outcome</h2>
       <div class="wrapper">
         <div class="embed embed-3by2">
-          <img class="embed-item island-2" src="{{site.baseurl}}/images/{{page.outcome-img-1}}" alt="">
+          <img class="embed-item island-2" src="{{site.baseurl}}/images/{{page.outcome-img-1}}" alt="{{page.outcome-1-alt}}">
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <div class="grid wrapper-2 island-1-2">
       <div class="unit [ xs-1 m-1-2 l-1-3 ] unit-push-m-1-2 unit-push-l-2-3 island-1-4 micro bot-nav">
         <div class="grid">

@@ -10,12 +10,13 @@
   <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  <link href="css/site.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,400i,700" rel="stylesheet">
   <link href="/favicon.ico" rel="shortcut icon">
 </head>
 <body>
 
-  <header class="header-1 relative full-height" id="about">
+  <header role="banner" class="header-1 full-height relative" id="about">
     <div class="pin-c wrapper">
       <div class="grid grid-middle island">
         <div class="unit xs-1 m-1-2">
@@ -26,17 +27,17 @@
         </div>
         <div class="unit [ xs-1-3 m-1-2 ]">
           <div>
-            <img class="img-flex profile-img" src="{{site.baseurl}}/images/me.jpg" alt="me">
+            <img class="img-flex profile-img" src="{{site.baseurl}}/images/me.jpg" alt="portrait of Marie Scharfe">
           </div>
         </div>
       </div>
     </div>
-    <div class="pin-cb">
+    <div class="pin-cb pad-b-1-2">
       <a href="#main"><p class="move">V</p></a>
     </div>
   </header>
 
-  <nav class="sticky" id="nav">
+  <nav role="navigation" id="nav" class="sticky">
     <ul class="list-group text-upper text-center push-0">
       <li class="island-1-2">
         <a href="#about">{{page.nav-1}}</a>
@@ -56,7 +57,7 @@
     </ul>
   </nav>
 
-  <main class="wrapper pad-main" id="main">
+  <main role="main" class="wrapper pad-main" id="main">
     <div class="grid gutter center-block">
       <div class="unit [ xs-1 m-2-3 l-4-5 xl-1 ] unit-offset-m-1-3 unit-offset-l-1-5 unit-offset-xl-0">
         <div class="grid gutter-1-2">
@@ -64,7 +65,7 @@
             <a href="{{site.baseurl}}/simple-split{{page.link-fr}}">
               <div class="polaroid">
                 <div class="embed embed-1by1">
-                  <img class="embed-item polaroid-img" src="{{site.baseurl}}/images/case-study-simple-split.jpg" alt="">
+                  <img class="embed-item polaroid-img" src="{{site.baseurl}}/images/case-study-simple-split.jpg" alt="Simple Split logo">
                 </div>
                 <div class="container island-1-2">
                   <p class="push-0 card-title">{{page.polaroid-1}}</p>
@@ -77,7 +78,7 @@
             <a href="{{site.baseurl}}/basic-white-witch{{page.link-fr}}">
               <div class="polaroid">
                 <div class="embed embed-1by1">
-                  <img class="embed-item polaroid-img" src="{{site.baseurl}}/images/case-study-basic-white-witch.jpg" alt="">
+                  <img class="embed-item polaroid-img" src="{{site.baseurl}}/images/case-study-basic-white-witch.jpg" alt="Basic White Witch logo">
                 </div>
                 <div class="container island-1-2">
                   <p class="push-0 card-title">{{page.polaroid-2}}</p>
@@ -94,7 +95,7 @@
             <a href="{{site.baseurl}}/lac-sainte-marie{{page.link-fr}}">
               <div class="polaroid">
                 <div class="embed embed-1by1">
-                  <img class="embed-item polaroid-img" src="{{site.baseurl}}/images/case-study-lac-sainte-marie.jpg" alt="">
+                  <img class="embed-item polaroid-img" src="{{site.baseurl}}/images/case-study-lac-sainte-marie.jpg" alt="Municipalité of Lac-Sainte-Marie logo">
                 </div>
                 <div class="container island-1-2">
                   <p class="push-0 card-title">{{page.polaroid-3}}</p>
@@ -107,7 +108,7 @@
             <a href="{{site.baseurl}}/wondering-about-a-vegan-diet{{page.link-fr}}">
               <div class="polaroid">
                 <div class="embed embed-1by1">
-                  <img class="embed-item polaroid-img" src="{{site.baseurl}}/images/case-study-wondering-about-a-vegan-diet.jpg" alt="">
+                  <img class="embed-item polaroid-img" src="{{site.baseurl}}/images/case-study-wondering-about-a-vegan-diet.jpg" alt="Wondering About a Vegan Diet logo">
                 </div>
                 <div class="container island-1-2">
                   <p class="push-0 card-title">{{page.polaroid-4}}</p>
@@ -172,46 +173,46 @@
     <hr class="wrapper">
   </div>
 
-  <aside class="push-2 text-center wrapper">
+  <aside id="data-author" itemprop="author" itemscope itemtype="https://schema.org/Person" class="push-2 text-center wrapper">
     <div class="grid">
       <div class="unit xs-1 m-1-2">
         <a class="icon-link gutter" href="#">
           <i class="icon i-48">
-            <img src="{{site.baseurl}}/images/location.svg" alt="">
+            <img src="{{site.baseurl}}/images/location.svg" alt="location icon">
           </i>
         </a>
-        <a class="icon-link gutter" href="mailto:hello@mariescharfe.ca">
+        <a itemprop="email" class="icon-link gutter" href="mailto:hello@mariescharfe.ca">
           <i class="icon i-48">
-            <img src="{{site.baseurl}}/images/email.svg" alt="">
+            <img src="{{site.baseurl}}/images/email.svg" alt="email icon">
           </i>
         </a>
         <a class="icon-link gutter" href="#">
           <i class="icon i-48">
-            <img src="{{site.baseurl}}/images/telephone.svg" alt="">
+            <img src="{{site.baseurl}}/images/telephone.svg" alt="telephone icon">
           </i>
         </a>
       </div>
       <div class="unit xs-1 m-1-2">
         <a class="icon-link gutter" href="https://www.instagram.com/mariescharfe">
           <i class="icon i-48">
-            <img src="{{site.baseurl}}/images/instagram.svg" alt="">
+            <img src="{{site.baseurl}}/images/instagram.svg" alt="instagram icon">
           </i>
         </a>
         <a class="icon-link gutter" href="https://twitter.com/MarieScharfe">
           <i class="icon i-48">
-            <img src="{{site.baseurl}}/images/twitter.svg" alt="">
+            <img src="{{site.baseurl}}/images/twitter.svg" alt="twitter icon">
           </i>
         </a>
         <a class="icon-link gutter" href="https://www.facebook.com/me.scharfe">
           <i class="icon i-48">
-            <img src="{{site.baseurl}}/images/facebook.svg" alt="">
+            <img src="{{site.baseurl}}/images/facebook.svg" alt="facebook icon">
           </i>
         </a>
       </div>
     </div>
   </aside>
 
-  <footer>
+  <footer role="contentinfo" id="data-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
     <div class="grid wrapper-2 island-1-2">
       <div class="unit [ xs-1 m-1-2 l-1-3 ] unit-push-m-1-2 unit-push-l-2-3 island-1-4 micro bot-nav">
         <div class="grid">
@@ -230,7 +231,7 @@
         </div>
       </div>
       <div class="unit [ xs-1 m-1-2 l-2-3 ] unit-pull-m-1-2 unit-pull-l-1-3 island-1-4 text-left copyright">
-        <small class="pico">© Marie Scharfe 2018</small>
+        <small class="pico">© <span itemprop="name" >Marie Scharfe</span> 2018</small>
       </div>
     </div>
   </footer>
