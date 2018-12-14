@@ -153,6 +153,10 @@ nav {
   width: 100vw;
 }
 
+.sticky:focus-within {
+  z-index: 10000000000;
+}
+
 .sticky li {
   display: inline-block;
   margin-bottom: 0;
