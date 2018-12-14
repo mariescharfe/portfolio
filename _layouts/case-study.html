@@ -2,15 +2,16 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Marie Scharfe Design</title>
+  <title>{{page.case-title}} • Marie Scharfe Design</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
   <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,400i,700" rel="stylesheet">
   <link href="/favicon.ico" rel="shortcut icon">
+  <meta name="description" content="{{page.meta-description}}">
 </head>
-<body>
+<body intemref="data-author" itemscope itemtype="https://schema.org/VisualArtwork">
 
   <div class="skip-links">
     <a href="#nav">Jump to nav</a>
@@ -40,12 +41,12 @@
     <div class="header-2-content">
       <div class="grid grid-middle wrapper unit-height header-grid">
         <div class="unit [ xs-1 m-1-2 ] island-2 unit-max-w">
-          <div class="embed embed-2by3">
-            <img class="embed-item" src="/images/{{page.title-img}}" alt="{{page.title-1-alt}}">
-          </div>
+          <h1 class="embed embed-2by3 push-0" itemprop="name" aria-label="{{page.case-title}}">
+            <img class="embed-item" src="/images/{{page.title-img}}" alt="{{page.case-title}}">
+          </h1>
         </div>
         <div class="unit [ xs-1 m-1-2 ] relative unit-height">
-          <p class="milli text-push gutter-2">{{page.description}}</p>
+          <p class="milli text-push gutter-2" itemprop="description">{{page.description}}</p>
         </div>
       </div>
     </div>
