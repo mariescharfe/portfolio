@@ -1105,9 +1105,9 @@ select:focus {
   outline-offset: 0;
 } */
 
-a:focus, [tabindex="0"]:focus {
+/* a:focus, [tabindex="0"]:focus {
   outline-offset: 3px;
-}
+} */
 
 .skip-links {
   margin: 0;
