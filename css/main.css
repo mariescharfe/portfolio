@@ -30,7 +30,7 @@
   }
 }
 
-Main:focus {
+main:focus {
   visibility: hidden;
 }
 
